@@ -1,20 +1,16 @@
-package lessons.lesson_3;
+package homework.hw_3;
+
+import java.util.Arrays;
 
 public class PointApp {
 
     public static void main(String[] args) {
-        //объявить переменную нашего типа
-        //а и p - локальные переменные, доступны только в методе
         int a = 150;
-        Point p = new Point(3,5);
-        //p.x = 3;
-        //p.y = 5;
+        homework.hw_3.Point p = new homework.hw_3.Point(3,6);
 
         System.out.println("Координаты точки (" + p.x + ";" + p.y + ")");
 
-        Point leftPoint = new Point(10,13);
-        //leftPoint.x = -10;
-        //leftPoint.y = 13;
+        homework.hw_3.Point leftPoint = new Point(10,13);
 
         p.printPoint();
         leftPoint.printPoint(true);
@@ -28,3 +24,4 @@ public class PointApp {
         System.out.println("\nНовые координаты точки: (" + flipX + ";" + flipY + ")");
     }
 }
+

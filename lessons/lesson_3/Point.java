@@ -53,4 +53,13 @@ public class Point {
 
     //Для примитивов значение по умолчанию 0 или false
 
+     int[] flip() {
+        int[] flipped = {};
+         x = -x;
+         y = -y;
+         flipped[0] = x;
+         flipped[1] = y;
+        return flipped;
+    }
+
 }
